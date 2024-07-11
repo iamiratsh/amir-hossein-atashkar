@@ -1,0 +1,59 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNrSQK6r6qlHztoAQiSelAA",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/inheritance%20hybrid%205%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Parent class 1\n",
+        "class Flyer:\n",
+        "    def fly(self):\n",
+        "        print(\"The flyer flies\")\n",
+        "\n",
+        "# Parent class 2\n",
+        "class Walker:\n",
+        "    def walk(self):\n",
+        "        print(\"The walker walks\")\n",
+        "\n",
+        "# Child class 1\n",
+        "class Bird(Flyer, Walker):\n",
+        "    def chirp(self):\n",
+        "        print(\"The bird chirps\")\n",
+        "\n",
+        "# Child class 2\n",
+        "class Parrot(Bird):\n",
+        "    def talk(self):\n",
+        "        print(\"The parrot talks\")\n"
+      ],
+      "metadata": {
+        "id": "Jg7oUxH_lbVd"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
