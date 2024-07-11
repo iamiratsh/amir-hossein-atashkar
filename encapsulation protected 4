@@ -1,0 +1,57 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMGYIAS2xrDkHwib5Q/+63L",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/encapsulation%20protected%204\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math\n",
+        "\n",
+        "class Circle:\n",
+        "    def __init__(self, radius):\n",
+        "        self.__radius = radius # private variable\n",
+        "\n",
+        "    def set_radius(self, radius):\n",
+        "        self.__radius = radius\n",
+        "\n",
+        "    def get_radius(self):\n",
+        "        return self.__radius\n",
+        "\n",
+        "    def area(self):\n",
+        "        return math.pi * (self.__radius ** 2)\n",
+        "\n",
+        "    def circumference(self):\n",
+        "        return 2 * math.pi * self.__radius"
+      ],
+      "metadata": {
+        "id": "IbtVbNTsgJWW"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
