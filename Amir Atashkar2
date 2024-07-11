@@ -1,0 +1,52 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMJB13w4Lk6XouaOeQg/5J9",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/Amir%20Atashkar2\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Point:\n",
+        "    def __init__(self, x, y):\n",
+        "        self.x = x\n",
+        "        self.y = y\n",
+        "\n",
+        "    def __lt__(self, other):\n",
+        "        return (self.x ** 2 + self.y ** 2) < (other.x ** 2 + other.y ** 2)\n",
+        "\n",
+        "point1 = Point(1, 2)\n",
+        "point2 = Point(3, 4)\n",
+        "\n",
+        "print(point1 < point2)"
+      ],
+      "metadata": {
+        "id": "fegkgOp4jKdH"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
