@@ -1,0 +1,59 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOudsoPMl9hoEAKwmW0HvNO",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/encapsulation%20protected%205\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Employee:\n",
+        "    def __init__(self, name, salary):\n",
+        "        self.__name = name # private variable\n",
+        "        self.__salary = salary # private variable\n",
+        "\n",
+        "    def set_name(self, name):\n",
+        "        self.__name = name\n",
+        "\n",
+        "    def set_salary(self, salary):\n",
+        "        self.__salary = salary\n",
+        "\n",
+        "    def get_name(self):\n",
+        "        return self.__name\n",
+        "\n",
+        "    def get_salary(self):\n",
+        "        return self.__salary\n",
+        "\n",
+        "    def increase_salary(self, percentage):\n",
+        "        self.__salary += (self.__salary * percentage / 100)"
+      ],
+      "metadata": {
+        "id": "K5rEoPXngcst"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
