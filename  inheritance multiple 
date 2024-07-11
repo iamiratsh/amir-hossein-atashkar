@@ -1,0 +1,52 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN3Drj/2QU4jxKZeEyAbqbm",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/%20inheritance%20multiple%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Parent1:\n",
+        "    def __init__(self):\n",
+        "        self.name = \"Parent1\"\n",
+        "\n",
+        "class Parent2:\n",
+        "    def __init__(self):\n",
+        "        self.name = \"Parent2\"\n",
+        "\n",
+        "class Child(Parent1, Parent2):\n",
+        "    def __init__(self):\n",
+        "        super().__init__()\n",
+        "        print(self.name)"
+      ],
+      "metadata": {
+        "id": "u6108Xr2PMxT"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
