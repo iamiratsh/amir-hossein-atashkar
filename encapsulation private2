@@ -1,0 +1,49 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNKZocpmY9Nk5Mg5pFNW96P",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/encapsulation%20private2\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Person:\n",
+        "    def __init__(self, name):\n",
+        "        self.__name = name\n",
+        "\n",
+        "    def set_name(self, name):\n",
+        "        self.__name = name\n",
+        "\n",
+        "    def get_name(self):\n",
+        "        return self.__name"
+      ],
+      "metadata": {
+        "id": "Kryc3X4GeBpj"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
