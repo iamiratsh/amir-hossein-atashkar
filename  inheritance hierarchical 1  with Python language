@@ -1,0 +1,51 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNdxdVKFT0YzJWp7GkFxm4n",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/%20inheritance%20hierarchical%201%20%20with%20Python%20language\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Animal:\n",
+        "    def sound(self):\n",
+        "        print(\"The animal makes a sound.\")\n",
+        "\n",
+        "class Dog(Animal):\n",
+        "    def sound(self):\n",
+        "        print(\"The dog barks.\")\n",
+        "\n",
+        "class Cat(Animal):\n",
+        "    def sound(self):\n",
+        "        print(\"The cat meows.\")"
+      ],
+      "metadata": {
+        "id": "_hNUoThjOf_o"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
