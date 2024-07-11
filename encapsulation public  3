@@ -1,0 +1,51 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNCYC/7Najpaknq4BKyBlSk",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/encapsulation%20public%20%203\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Person:\n",
+        "    def __init__(self, name):\n",
+        "        self._name = name\n",
+        "\n",
+        "    @property\n",
+        "    def name(self):\n",
+        "        return self._name\n",
+        "\n",
+        "    @name.setter\n",
+        "    def name(self, value):\n",
+        "        self._name = value"
+      ],
+      "metadata": {
+        "id": "_MWIhhAxhUcP"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
