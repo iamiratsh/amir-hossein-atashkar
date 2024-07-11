@@ -1,0 +1,86 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMCOAY1eDKEexbJ0TFPx7yF",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/%23%D8%AA%D9%81%D8%A7%D9%88%D8%AA%20%D9%88%D8%A7%D8%B1%D8%AB%20multiple%20level%20%D9%88%20Multiple%20%DA%86%DB%8C%D8%B3%D8%AA%D8%9F%20%D8%A8%D8%A7%20%D9%85%D8%AB%D8%A7%D9%84\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#تفاوت وارث multiple level و Multiple چیست؟ با مثال\n",
+        "\n",
+        "وراثت تک: یک کلاس فرزند از یک طبقه والدین ارث می# برد.\n",
+        " وراثت چندگانه: یک کلاس فرزند از بیش از یک کلاس والد ارث می برد.\n",
+        " وراثت چندسطحی: یک کلاس فرزند از یک کلاس والد ارث می برد که خود از کلاس والد دیگر ارث می برد.\n",
+        "\n",
+        "#در برنامه نویسی شی گرا (OOP)، وراثت مکانیزمی است که در آن یک کلاس جدید (فرزند یا زیر کلاس) خصوصیات و رفتار یک کلاس موجود (والد یا سوپرکلاس) را به ارث می برد\n",
+        "# در وراثت تک، یک کلاس فرزند تنها از یک کلاس والد ارث می برد.  این ساده ترین شکل ارث است.\n",
+        "\n",
+        "class Animal:\n",
+        "    def sound(self):\n",
+        "        print(\"The animal makes a sound.\")\n",
+        "\n",
+        "class Dog(Animal):\n",
+        "    def sound(self):\n",
+        "        print(\"The dog barks.\")\n",
+        "#در این مثال، Dog یک کلاس کودک است که از Animal به ارث می‌برد.  Dog پیاده‌سازی خاص خود را از روش صدا دارد، که روشی را در Animal لغو می‌کند.\n",
+        "\n",
+        "#در وراثت چندگانه، یک کلاس فرزند از بیش از یک کلاس والد ارث می برد.  این به کلاس فرزند اجازه می دهد تا ویژگی ها و رفتار را از چندین منبع به ارث ببرد\n",
+        "\n",
+        "class Animal:\n",
+        "    def sound(self):\n",
+        "        print(\"The animal makes a sound.\")\n",
+        "\n",
+        "class Mammal:\n",
+        "    def feed_young(self):\n",
+        "        print(\"The mammal feeds its young.\")\n",
+        "\n",
+        "class Dog(Animal, Mammal):\n",
+        "    def sound(self):\n",
+        "        print(\"The dog barks.\")\n",
+        "#در این مثال، Dog یک کلاس کودک است که هم از Animal و هم از Mammal به ارث می برد.  سگ روش صدا را از Animal و روش feed_young را از Mammal به ارث می برد\n",
+        "#در وراثت چندسطحی، یک کلاس فرزند از یک کلاس والد ارث می برد که خود از کلاس والد دیگر ارث می برد.  این یک سلسله مراتب وراثت ایجاد می کند.\n",
+        "class Animal:\n",
+        "    def sound(self):\n",
+        "        print(\"The animal makes a sound.\")\n",
+        "\n",
+        "class Mammal(Animal):\n",
+        "    def feed_young(self):\n",
+        "        print(\"The mammal feeds its young.\")\n",
+        "\n",
+        "class Dog(Mammal):\n",
+        "    def sound(self):\n",
+        "        print(\"The dog barks.\")\n",
+        "\n",
+        "#در این مثال، Dog یک کلاس کودک است که از Mammal ارث می برد، که خود از Animal ارث می برد.  سگ روش صدا را از Mammal به ارث می برد (که در Animal جایگزین می شود) و روش feed_young را از Mammal."
+      ],
+      "metadata": {
+        "id": "9_7mXTjFQObd"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
