@@ -1,0 +1,60 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNuOPuRQkOQZAoW021Kt6nW",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/Multiple%20Inheritance\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Parent1:\n",
+        "    def __init__(self, value):\n",
+        "        self.value = value\n",
+        "\n",
+        "    def method(self):\n",
+        "        print(\"Parent1.method\")\n",
+        "\n",
+        "class Parent2:\n",
+        "    def __init__(self, value):\n",
+        "        self.value = value\n",
+        "\n",
+        "    def method(self):\n",
+        "print(\"Parent2.method\")\n",
+        "\n",
+        "class Child(Parent1, Parent2):\n",
+        "    def __init__(self, value):\n",
+        "        super().__init__(value)\n",
+        "\n",
+        "    def method(self):\n",
+        "        print(\"Child.method\")"
+      ],
+      "metadata": {
+        "id": "bPHjbfhJYrLX"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
