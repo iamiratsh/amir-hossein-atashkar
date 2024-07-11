@@ -1,0 +1,55 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOwxMoR3ZBkU3JpN77JmdK+",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/inheritance%20single%20%204%20Atashkar\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Person:\n",
+        "    def __init__(self, name, age):\n",
+        "        self.name = name\n",
+        "        self.age = age\n",
+        "\n",
+        "    def greet(self):\n",
+        "        print(\"Hello, my name is \" + self.name + \".\")\n",
+        "\n",
+        "class Student(Person):\n",
+        "    def __init__(self, name, age, major):\n",
+        "        super().__init__(name, age)\n",
+        "        self.major = major\n",
+        "\n",
+        "    def greet(self):\n",
+        "        print(\"Hello, my name is \" + self.name + \" and I'm a \" + self.major + \" major.\")"
+      ],
+      "metadata": {
+        "id": "11jywEI3mTyg"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
