@@ -1,0 +1,64 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP3T3IGRqln5uLc/BuQI+Ql",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/inheritance%20hierarchical%205\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class University:\n",
+        "    def __init__(self, name):\n",
+        "        self.name = name\n",
+        "\n",
+        "    def display(self):\n",
+        "        print(f\"University: {self.name}\")\n",
+        "\n",
+        "class Department(University):\n",
+        "    def __init__(self, name, university):\n",
+        "        super().__init__(university)\n",
+        "        self.name = name\n",
+        "\n",
+        "    def display(self):\n",
+        "        super().display()\n",
+        "        print(f\"Department: {self.name}\")\n",
+        "\n",
+        "class Course(Department):\n",
+        "    def __init__(self, name, department):\n",
+        "        super().__init__(department, department.name)\n",
+        "        self.name = name\n",
+        "\n",
+        "    def display(self):\n",
+        "        super().display()\n",
+        "        print(f\"Course: {self.name}\")\n"
+      ],
+      "metadata": {
+        "id": "fQTTb8YWkZPf"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
