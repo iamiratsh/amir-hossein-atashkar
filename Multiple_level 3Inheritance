@@ -1,0 +1,51 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNuNa/Dw4V42gL8V9/cHaXN",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/Multiple_level%203Inheritance\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Shape:\n",
+        "    def area(self):\n",
+        "        print(\"The shape has an area.\")\n",
+        "\n",
+        "class Rectangle(Shape):\n",
+        "    def perimeter(self):\n",
+        "        print(\"The rectangle has a perimeter.\")\n",
+        "\n",
+        "class Square(Rectangle):\n",
+        "    def diagonal(self):\n",
+        "        print(\"The square has a diagonal.\")"
+      ],
+      "metadata": {
+        "id": "RfsjU4XbbABw"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
