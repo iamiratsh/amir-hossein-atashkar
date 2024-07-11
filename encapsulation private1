@@ -1,0 +1,49 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO2TA8KO4IM4TNKoUL5mDWf",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/encapsulation%20private1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class BankAccount:\n",
+        "    def __init__(self, balance=0):\n",
+        "        self.__balance = balance\n",
+        "\n",
+        "    def deposit(self, amount):\n",
+        "        self.__balance += amount\n",
+        "\n",
+        "    def get_balance(self):\n",
+        "        return self.__balance"
+      ],
+      "metadata": {
+        "id": "w2uJAH4leQ9j"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
