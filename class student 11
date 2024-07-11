@@ -1,0 +1,57 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMNICMKyZ2HUCiTS8nnCcMw",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/class%20student%2011\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#کلاس دانجشو بنوسید ک داخل آن از متدد های سازنده، مخرب، String به کار رفته باشد در آن معدل، میانگین نمرات نمایش داده شود با زبان پاییتون\n",
+        "\n",
+        "class Student:\n",
+        "    def __init__(self, name, grades):\n",
+        "        self.name = name\n",
+        "        self.grades = grades\n",
+        "\n",
+        "    def __del__(self):\n",
+        "        print(f\"Destroying student object for {self.name}\")\n",
+        "\n",
+        "    def __str__(self):\n",
+        "        return f\"Student: {self.name}, GPA: {self.calculate_gpa():.2f}\"\n",
+        "\n",
+        "    def calculate_gpa(self):\n",
+        "        total_points = sum(self.grades.values())\n",
+        "        total_credits = sum(self.grades.keys())\n",
+        "        return total_points / total_credits"
+      ],
+      "metadata": {
+        "id": "pSgWRa0jc70g"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
