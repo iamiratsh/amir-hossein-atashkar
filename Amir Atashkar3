@@ -1,0 +1,47 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOFxDb0HQW8i5VVQKlAPfgt",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/Amir%20Atashkar3\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Calculator:\n",
+        "    def add(self, a, b=0):\n",
+        "        return a + b\n",
+        "\n",
+        "calc = Calculator()\n",
+        "print(calc.add(5))\n",
+        "print(calc.add(3, 7))"
+      ],
+      "metadata": {
+        "id": "iGLOV8OBi7NP"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
