@@ -1,0 +1,60 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN2qy0HUy+LQw3rXw3PVrR2",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/inheritance%20single%20%205%20ghanavati\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class BankAccount:\n",
+        "    def __init__(self, balance):\n",
+        "        self.balance = balance\n",
+        "\n",
+        "    def deposit(self, amount):\n",
+        "        self.balance += amount\n",
+        "\n",
+        "    def withdraw(self, amount):\n",
+        "        if amount <= self.balance:\n",
+        "            self.balance -= amount\n",
+        "        else:\n",
+        "            print(\"Insufficient funds.\")\n",
+        "\n",
+        "class SavingsAccount(BankAccount):\n",
+        "    def __init__(self, balance, interest_rate):\n",
+        "        super().__init__(balance)\n",
+        "        self.interest_rate = interest_rate\n",
+        "\n",
+        "    def add_interest(self):\n",
+        "        self.balance += self.balance * self.interest_rate"
+      ],
+      "metadata": {
+        "id": "Ufm1X3Bal1KR"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
