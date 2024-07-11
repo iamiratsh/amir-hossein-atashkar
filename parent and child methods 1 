@@ -1,0 +1,73 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMWorEmdZ60Gqq9bIZ9aVHq",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/parent%20and%20child%20methods%201%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#نحوه استفاده از متدها و متغیر های والد و فرزند را با مثال مشخص کنید.\n",
+        "\n",
+        "class Animal:\n",
+        "    def __init__(self, name, age):\n",
+        "        self.name = name\n",
+        "        self.age = age\n",
+        "\n",
+        "    def sound(self):\n",
+        "        print(\"The animal makes a sound.\")\n",
+        "\n",
+        "    def eat(self):\n",
+        "        print(\"The animal is eating.\")\n",
+        "\n",
+        "class Dog(Animal):\n",
+        "    def __init__(self, name, age, breed):\n",
+        "        super().__init__(name, age)  # Calls the parent's __init__ method\n",
+        "        self.breed = breed\n",
+        "\n",
+        "    def sound(self):\n",
+        "        print(\"The dog barks.\")  # Overrides the parent's sound method\n",
+        "\n",
+        "    def fetch(self):\n",
+        "        print(\"The dog is fetching.\")\n",
+        "\n",
+        "my_dog = Dog(\"Fido\", 3, \"Golden Retriever\")\n",
+        "\n",
+        "my_dog.sound()\n",
+        "my_dog.eat()\n",
+        "my_dog.fetch()\n",
+        "\n",
+        "print(my_dog.name)\n",
+        "print(my_dog.age)\n",
+        "print(my_dog.breed)"
+      ],
+      "metadata": {
+        "id": "B7pr20Nnz4nb"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
