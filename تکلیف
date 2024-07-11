@@ -1,0 +1,67 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMqRjqShuF+3nhjpZXyWF+V",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/%D8%AA%DA%A9%D9%84%DB%8C%D9%81\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#برنامه ای بنوسید که ضرایب دو چند جمله ای را از رتبه 5 ورودی گرفته آنگاه حاصل جمع و حاصل تفریق این دو چند جمله ای را در خروجی نوشته\n",
+        "\n",
+        "def add_polynomials(poly1, poly2):\n",
+        "    result = [0] * 5\n",
+        "    for i in range(5):\n",
+        "        result[i] = poly1[i] + poly2[i]\n",
+        "    return result\n",
+        "\n",
+        "def subtract_polynomials(poly1, poly2):\n",
+        "    result = [0] * 5\n",
+        "    for i in range(5):\n",
+        "        result[i] = poly1[i] - poly2[i]\n",
+        "    return result\n",
+        "\n",
+        "def print_polynomial(poly):\n",
+        "    terms = []\n",
+        "    for i in range(5):\n",
+        "        if poly[i] != 0:\n",
+        "            term = \"\"\n",
+        "            if i == 0:\n",
+        "                term += str(poly[i])\n",
+        "            elif i == 1:\n",
+        "                term += str(poly[i]) + \"x\"\n",
+        "            else:\n",
+        "                term += str(poly[i]) + \"x^\" + str(i)\n",
+        "            terms.append(term)\n",
+        "    return \" + \".join(terms)"
+      ],
+      "metadata": {
+        "id": "RA5tNqil93NG"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
