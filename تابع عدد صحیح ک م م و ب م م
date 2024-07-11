@@ -1,0 +1,53 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPQ95NMjUJZiTHOqDiiQQBx",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/%D8%AA%D8%A7%D8%A8%D8%B9%20%D8%B9%D8%AF%D8%AF%20%D8%B5%D8%AD%DB%8C%D8%AD%20%DA%A9%20%D9%85%20%D9%85%20%D9%88%20%D8%A8%20%D9%85%20%D9%85\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#تابعی بنویسید که عدد صحیح n را از ورودی بگیرد آنگاه ب م م و ک م م را به خروجی ارسال کنه\n",
+        "\n",
+        "def calculate_means(n):\n",
+        "    if not isinstance(n, int) or n <= 0:\n",
+        "        raise ValueError(\"Input must be a positive integer\")\n",
+        "\n",
+        "    bmm = sum(i for i in range(1, n+1)) /\n",
+        "    cmm = [None]\n",
+        "    current_sum = 0\n",
+        "    for i in range(1, n+1):\n",
+        "        current_sum += i\n",
+        "        cmm.append(current_sum / i)\n",
+        "    return bmm, cmm[-1]"
+      ],
+      "metadata": {
+        "id": "cbTYkAsg5jzm"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
