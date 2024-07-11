@@ -1,0 +1,49 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOodZk7zI8m2GBzNqaFIWw0",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/encapsulation%20public%20%204\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class ShoppingCart:\n",
+        "    def __init__(self):\n",
+        "        self.items = []\n",
+        "\n",
+        "    def add_item(self, item):\n",
+        "        self.items.append(item)\n",
+        "\n",
+        "    def get_items(self):\n",
+        "        return self.items"
+      ],
+      "metadata": {
+        "id": "Ku8_Sd0Lhshk"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
