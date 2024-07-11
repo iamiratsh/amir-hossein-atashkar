@@ -1,0 +1,52 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO17Yx8+gGTGghmMPp7Ia8S",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/inheritance%20hybrid%203\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "class Flyer:\n",
+        "    def fly(self):\n",
+        "        print(\"The flyer flies\")\n",
+        "\n",
+        "class Walker:\n",
+        "    def walk(self):\n",
+        "        print(\"The walker walks\")\n",
+        "\n",
+        "class Bird(Flyer, Walker):\n",
+        "    def chirp(self):\n",
+        "        print(\"The bird chirps\")"
+      ],
+      "metadata": {
+        "id": "9SJBWA11k9j9"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
