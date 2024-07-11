@@ -1,0 +1,54 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNN+OcQGcSSYS8YjY3VDqMr",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/%20inheritance%20hybrid%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "class Animal:\n",
+        "    def sound(self):\n",
+        "        print(\"The animal makes a sound\")\n",
+        "\n",
+        "# Parent class\n",
+        "class Mammal(Animal):\n",
+        "    def eat(self):\n",
+        "        print(\"The mammal eats\")\n",
+        "\n",
+        "# Child class\n",
+        "class Dog(Mammal):\n",
+        "    def sound(self):\n",
+        "        print(\"The dog barks\")\n"
+      ],
+      "metadata": {
+        "id": "HMw4DSIYO6Ae"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
