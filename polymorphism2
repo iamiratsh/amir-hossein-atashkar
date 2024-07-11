@@ -1,0 +1,67 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOSN1+PIgnmYdB7Y6SO9Ug5",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/polymorphism2\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Shape:\n",
+        "    def area(self):\n",
+        "        pass\n",
+        "\n",
+        "class Rectangle(Shape):\n",
+        "    def __init__(self, width, height):\n",
+        "        self.width = width\n",
+        "        self.height = height\n",
+        "\n",
+        "    def area(self):\n",
+        "        return self.width * self.height\n",
+        "\n",
+        "class Circle(Shape):\n",
+        "    def __init__(self, radius):\n",
+        "        self.radius = radius\n",
+        "\n",
+        "    def area(self):\n",
+        "        import math\n",
+        "        return math.pi * (self.radius ** 2)\n",
+        "\n",
+        "rectangle = Rectangle(5, 10)\n",
+        "circle = Circle(3)\n",
+        "\n",
+        "shapes = [rectangle, circle]\n",
+        "\n",
+        "for shape in shapes:\n",
+        "    print(f\"Area of {shape.__class__.__name__}: {shape.area()}\")"
+      ],
+      "metadata": {
+        "id": "fgRP148T0eBO"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
