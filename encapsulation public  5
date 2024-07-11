@@ -1,0 +1,49 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPamg7EReLoVllga+dap3l3",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/encapsulation%20public%20%205\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Student:\n",
+        "    def __init__(self, grades):\n",
+        "        self._grades = grades\n",
+        "\n",
+        "    def get_grade(self, subject):\n",
+        "        return self._grades.get(subject)\n",
+        "\n",
+        "    def set_grade(self, subject, grade):\n",
+        "        self._grades[subject] = grade"
+      ],
+      "metadata": {
+        "id": "go4WU_0GiJ7I"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
