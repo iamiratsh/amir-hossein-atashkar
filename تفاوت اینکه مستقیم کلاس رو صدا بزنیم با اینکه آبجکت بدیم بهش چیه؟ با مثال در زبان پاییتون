@@ -1,0 +1,58 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN815hWYSoWamavAk71S9sO",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/%D8%AA%D9%81%D8%A7%D9%88%D8%AA%20%D8%A7%DB%8C%D9%86%DA%A9%D9%87%20%D9%85%D8%B3%D8%AA%D9%82%DB%8C%D9%85%20%DA%A9%D9%84%D8%A7%D8%B3%20%D8%B1%D9%88%20%D8%B5%D8%AF%D8%A7%20%D8%A8%D8%B2%D9%86%DB%8C%D9%85%20%D8%A8%D8%A7%20%D8%A7%DB%8C%D9%86%DA%A9%D9%87%20%D8%A2%D8%A8%D8%AC%DA%A9%D8%AA%20%D8%A8%D8%AF%DB%8C%D9%85%20%D8%A8%D9%87%D8%B4%20%DA%86%DB%8C%D9%87%D8%9F%20%D8%A8%D8%A7%20%D9%85%D8%AB%D8%A7%D9%84%20%D8%AF%D8%B1%20%D8%B2%D8%A8%D8%A7%D9%86%20%D9%BE%D8%A7%DB%8C%DB%8C%D8%AA%D9%88%D9%86\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#تفاوت اینکه مستقیم کلاس رو صدا بزنیم با اینکه آبجکت بدیم بهش چیه؟ با مثال\n",
+        "\n",
+        "#هنگامی که ما یک کلاس را مستقیماً صدا می کنیم در اصل سازنده کلاس را فراخوانی می کنیم که نمونه جدیدی از کلاس را برمیگرداونه. این به عنوان نمونه سازی کلاس شناخته می شود از طرف دیگر، وقتی به یک کلاس یک شی می دهید، یک مرجع به یک نمونه موجود از کلاس ایجاد می کنید.\n",
+        "\n",
+        "class MyClass:\n",
+        "    def __init__(self, name):\n",
+        "        self.name = name\n",
+        "\n",
+        "    def greet(self):\n",
+        "        print(f\"Hello, my name is {self.name}!\")\n",
+        "\n",
+        "# Calling the class directly (instantiating a new object)\n",
+        "my_obj1 = MyClass(\"Alice\")\n",
+        "my_obj1.greet()\n",
+        "\n",
+        "# Giving the class an object (creating a reference to an existing object)\n",
+        "my_obj2 = my_obj1\n",
+        "my_obj2.greet()"
+      ],
+      "metadata": {
+        "id": "9f7TgSF657OZ"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
