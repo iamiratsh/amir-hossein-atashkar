@@ -1,0 +1,57 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNHvHAQjrCZSZnPuT+gYKVN",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/%20encapsulation%20protected%201\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class BankAccount:\n",
+        "    def __init__(self, balance=0):\n",
+        "        self.__balance = balance # private variable\n",
+        "\n",
+        "    def deposit(self, amount):\n",
+        "        self.__balance += amount\n",
+        "        return self.__balance\n",
+        "\n",
+        "    def withdraw(self, amount):\n",
+        "        if amount > self.__balance:\n",
+        "            print(\"Insufficient balance\")\n",
+        "            return None\n",
+        "        self.__balance -= amount\n",
+        "        return self.__balance\n",
+        "\n",
+        "    def get_balance(self):\n",
+        "        return self.__balance"
+      ],
+      "metadata": {
+        "id": "jv8dCpqQN4or"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
