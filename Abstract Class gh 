@@ -1,0 +1,65 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMb9MP1uLj7DNvJk+IYb4Vy",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/Abstract%20Class%20gh%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from abc import ABC, abstractmethod\n",
+        "\n",
+        "class Animal(ABC):\n",
+        "    def __init__(self, name):\n",
+        "        self._name = name\n",
+        "\n",
+        "    @property\n",
+        "    def name(self):\n",
+        "        return self._name\n",
+        "\n",
+        "    @name.setter\n",
+        "    def name(self, value):\n",
+        "        self._name = value\n",
+        "\n",
+        "    @abstractmethod\n",
+        "    def sound(self):\n",
+        "        pass\n",
+        "\n",
+        "class Dog(Animal):\n",
+        "    def sound(self):\n",
+        "        return \"Woof!\"\n",
+        "\n",
+        "class Cat(Animal):\n",
+        "    def sound(self):\n",
+        "        return \"Meow!\""
+      ],
+      "metadata": {
+        "id": "gWCM4_1yUGAB"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
