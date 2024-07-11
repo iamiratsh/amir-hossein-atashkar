@@ -1,0 +1,56 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNHGM8MxitVWfT8JdTfIOwF",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/encapsulation%20protected%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Student:\n",
+        "    def __init__(self, name, age):\n",
+        "        self.__name = name # private variable\n",
+        "        self.__age = age # private variable\n",
+        "\n",
+        "    def set_name(self, name):\n",
+        "        self.__name = name\n",
+        "\n",
+        "    def set_age(self, age):\n",
+        "        self.__age = age\n",
+        "\n",
+        "    def get_name(self):\n",
+        "        return self.__name\n",
+        "\n",
+        "    def get_age(self):\n",
+        "        return self.__age"
+      ],
+      "metadata": {
+        "id": "INFFQd_sfsJW"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
