@@ -1,0 +1,65 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPN3PYa3KXWDYZTVTUOcwuC",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/inheritance%20hierarchical%204\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Employee:\n",
+        "    def __init__(self, name, salary):\n",
+        "        self.name = name\n",
+        "        self.salary = salary\n",
+        "\n",
+        "    def display(self):\n",
+        "        print(f\"Name: {self.name}, Salary: {self.salary}\")\n",
+        "\n",
+        "class Manager(Employee):\n",
+        "    def __init__(self, name, salary, team_size):\n",
+        "        super().__init__(name, salary)\n",
+        "        self.team_size = team_size\n",
+        "\n",
+        "    def display(self):\n",
+        "        super().display()\n",
+        "        print(f\"Team Size: {self.team_size}\")\n",
+        "\n",
+        "class Developer(Employee):\n",
+        "    def __init__(self, name, salary, language):\n",
+        "        super().__init__(name, salary)\n",
+        "        self.language = language\n",
+        "\n",
+        "    def display(self):\n",
+        "        super().display()\n",
+        "        print(f\"Language: {self.language}\")\n"
+      ],
+      "metadata": {
+        "id": "1K9JEbt3kKIF"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
