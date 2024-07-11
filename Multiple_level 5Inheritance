@@ -1,0 +1,51 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMEuqK8SNzF7wOqjp79KDfz",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/Multiple_level%205Inheritance\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Food:\n",
+        "    def eat(self):\n",
+        "        print(\"The food is eaten.\")\n",
+        "\n",
+        "class Fruit(Food):\n",
+        "    def grow(self):\n",
+        "        print(\"The fruit grows on a tree.\")\n",
+        "\n",
+        "class Apple(Fruit):\n",
+        "    def ripen(self):\n",
+        "        print(\"The apple ripens on the tree.\")"
+      ],
+      "metadata": {
+        "id": "gk1Nv2vecX-V"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
