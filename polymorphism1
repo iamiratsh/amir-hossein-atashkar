@@ -1,0 +1,49 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN3naCK/UTF2XguS5yWWhnR",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/polymorphism1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "\n",
+        "string_len = len(\"Hello, world!\")\n",
+        "list_len = len([1, 2, 3, 4, 5])\n",
+        "dict_len = len({\"name\": \"John\", \"age\": 30})\n",
+        "\n",
+        "print(f\"String length: {string_len}\")\n",
+        "print(f\"List length: {list_len}\")\n",
+        "print(f\"Dictionary length: {dict_len}\")"
+      ],
+      "metadata": {
+        "id": "H-je48840O34"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
