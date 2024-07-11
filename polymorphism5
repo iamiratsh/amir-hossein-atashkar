@@ -1,0 +1,61 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOkxYxY9OCZNBP1BIqLDXJG",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iamiratsh/amir-hossein-atashkar/blob/main/polymorphism5\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "\n",
+        "def has_name(cls):\n",
+        "    cls.name = \"Animal\"\n",
+        "    return cls\n",
+        "\n",
+        "@has_name\n",
+        "class Dog:\n",
+        "    def bark(self):\n",
+        "        print(\"Woof!\")\n",
+        "\n",
+        "@has_**name**\n",
+        "class Cat:\n",
+        "    def meow(self):\n",
+        "        print(\"Meow!\")\n",
+        "\n",
+        "dog = Dog()\n",
+        "cat = Cat()\n",
+        "\n",
+        "print(dog.name)\n",
+        "print(cat.name)"
+      ],
+      "metadata": {
+        "id": "B-Jeal7o1abj"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
